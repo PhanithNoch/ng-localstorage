@@ -1,0 +1,40 @@
+<hr>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+  <div class="form-group">
+    <label >Product Name</label>
+    <input [(ngModel)]="product.name" type="text" class="form-control">
+  </div>
+
+    </div>
+    <div class="col-md-6">
+  <div class="form-group">
+    <label >Qty</label>
+    <input type="number" [(ngModel)]="product.qty" class="form-control">
+  </div>
+  
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label >barcode</label>
+        <input type="text" [(ngModel)]="product.barcode" class="form-control">
+      </div>
+    
+        </div>
+        <div class="col-md-6">
+      <div class="form-group">
+        <label >Price</label>
+        <input [(ngModel)]="product.price" type="number" class="form-control">
+      </div>
+      
+        </div>
+  </div>
+
+  <div class="row px-3">
+    <button (click)="onUpdate()" class="form-control btn-info">Update Product</button>
+  </div>
+
+</div>
